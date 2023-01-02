@@ -1,19 +1,19 @@
-// function solution(quiz) {
-//   let answer = [];
-//   for (q of quiz) {
-//     let quizArr = q.split(" ");
-//     if (quizArr[1] === "+") {
-//       +quizArr[0] + +quizArr[2] === +quizArr[4]
-//         ? answer.push("O")
-//         : answer.push("X");
-//     } else {
-//       +quizArr[0] - +quizArr[2] === +quizArr[4]
-//         ? answer.push("O")
-//         : answer.push("X");
-//     }
-//   }
-//   return answer;
-// }
+function solution(quiz) {
+  let answer = [];
+  for (q of quiz) {
+    let quizArr = q.split(" ");
+    if (quizArr[1] === "+") {
+      +quizArr[0] + +quizArr[2] === +quizArr[4]
+        ? answer.push("O")
+        : answer.push("X");
+    } else {
+      +quizArr[0] - +quizArr[2] === +quizArr[4]
+        ? answer.push("O")
+        : answer.push("X");
+    }
+  }
+  return answer;
+}
 
 console.log(solution(["3 - 4 = -3", "5 + 6 = 11"])); // ["X", "O"]
 console.log(
