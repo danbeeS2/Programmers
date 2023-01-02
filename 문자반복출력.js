@@ -9,7 +9,7 @@ function solution(my_string, n) {
 
 console.log(solution("hello", 3));
 
-let str = "hello";
-for (s of str) {
-  console.log(s.repeat(2));
-}
+// let str = "hello";
+// for (s of str) {
+//   console.log(s.repeat(2));
+// }
