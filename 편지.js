@@ -4,3 +4,7 @@ function solution(message) {
 }
 console.log(solution("happy birthday!")); // 30
 console.log(solution("I love you~")); // 22
+
+// function solution(message) {
+//   return message.length*2;
+// }
