@@ -7,11 +7,22 @@ function solution(order) {
   return answer;
 }
 
+// filter 사용
 // function solution(order) {
 //   return order
 //     .toString()
 //     .split("")
 //     .filter((n) => ["3", "6", "9"].includes(n));
+// }
+
+// 정규표현식 사용
+// function solution(order) {
+//   var answer = [...order.toString().matchAll(/[3|6|9]/g)].length;
+//   return answer;
+// }
+
+// function solution(order) {
+//   return ("" + order).split(/[369]/).length - 1;
 // }
 
 console.log(solution(3)); // 1
